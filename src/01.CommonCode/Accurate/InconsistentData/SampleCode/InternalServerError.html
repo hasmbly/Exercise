@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>HTTP Status 500 – Internal Server Error</h1><hr class=\"line\" /><p><b>Type</b> Exception Report</p>
+    <p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p>
+    <p><b>Exception</b></p>
+<pre>java.lang.NullPointerException  org.redisson.tomcat.RedissonSession.expireSession(RedissonSession.java:227)  org.redisson.tomcat.RedissonSession.access(RedissonSession.java:218)  
+org.apache.catalina.connector.Request.doGetSession(Request.java:2959)  org.apache.catalina.connector.Request.getSessionInternal(Request.java:2604)  
+org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:426)  org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)  
+org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)  org.apache.coyote.ajp.AbstractAjpProcessor.process(AbstractAjpProcessor.java:870)  
+org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)  org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2527)  
+org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2516)  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)  
+java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)  org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)  
+java.lang.Thread.run(Thread.java:748) </pre>
+    <p>
+        <b>Note</b>
+        The full stack trace of the root cause is available in the server logs.
+    </p>
+    <hr class=\"line\" /><h3>Apache Tomcat/8.0.53</h3>
+</body>
+</html>

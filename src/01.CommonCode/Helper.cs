@@ -122,7 +122,7 @@ namespace Exercise.CommonCode
             return stats;
         }
 
-        public static void RunBenchMarks()
+        public static void RunBenchMarksForEFCore()
         {
             BenchmarkRunner.Run<PopulateFirst_VS_AlwaysPopulateInLoop_EFCoreBenchamarks>();
         }
@@ -229,6 +229,22 @@ namespace Exercise.CommonCode
             }
 
             return new String(stringChars);
+        }
+
+        public static void Run(this Action task)
+        {
+            try
+            {
+                Console.WriteLine("Loading...");
+
+                task.Invoke();
+
+                Console.WriteLine("Finished...");
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

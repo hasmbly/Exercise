@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
-		<TargetFramework>net6.0</TargetFramework>
+		<TargetFramework>net7.0</TargetFramework>
 		<RootNamespace>Exercise.CommonCode</RootNamespace>
 		<AssemblyName>Exercise.CommonCode</AssemblyName>
 		<ImplicitUsings>enable</ImplicitUsings>
@@ -41,6 +41,48 @@
 
 	<ItemGroup>
 	  <Folder Include="Benchmarks\Parallelism\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Resources\Branches\Constants\DisplayTextFor.id.Designer.cs">
+	    <DependentUpon>DisplayTextFor.id.resx</DependentUpon>
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	  </Compile>
+	  <Compile Update="Resources\Branches\Constants\DisplayTextFor.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>DisplayTextFor.resx</DependentUpon>
+	  </Compile>
+	  <Compile Update="Resources\Materials\Constants\DisplayTextFor.Designer.cs">
+	    <DependentUpon>DisplayTextFor.resx</DependentUpon>
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	  </Compile>
+	  <Compile Update="Resources\Materials\Constants\DisplayTextFor.id.Designer.cs">
+	    <DependentUpon>DisplayTextFor.id.resx</DependentUpon>
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Resources\Branches\Constants\DisplayTextFor.id.resx">
+	    <LastGenOutput>DisplayTextFor.id.Designer.cs</LastGenOutput>
+	    <Generator>PublicResXFileCodeGenerator</Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="Resources\Branches\Constants\DisplayTextFor.resx">
+	    <Generator>PublicResXFileCodeGenerator</Generator>
+	    <LastGenOutput>DisplayTextFor.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="Resources\Materials\Constants\DisplayTextFor.id.resx">
+	    <LastGenOutput>DisplayTextFor.id.Designer.cs</LastGenOutput>
+	    <Generator>PublicResXFileCodeGenerator</Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="Resources\Materials\Constants\DisplayTextFor.resx">
+	    <LastGenOutput>DisplayTextFor.Designer.cs</LastGenOutput>
+	    <Generator>PublicResXFileCodeGenerator</Generator>
+	  </EmbeddedResource>
 	</ItemGroup>
 
 	<ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
